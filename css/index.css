@@ -96,6 +96,7 @@ nav a {
 
 nav a:hover {
     color: dodgerblue;
+    
 }
 
 .head {
@@ -120,18 +121,20 @@ nav a:hover {
 }
 
 .start-button {
-	width: 45%;
-	font-size: 90%;
+    padding: 2% 7%;
+	font-size: 125%;
 	align-items: center;
 	margin: 0 25%;
 	border-radius: 10px;
 }
 .start-button:hover {
-	background: dodgerblue;
+    background: dodgerblue;
+    color: white;
 }
 
 .main-text{
-	display: flex;
+    display: flex;
+    margin 5%;
 }
 
 .main-text .text-area {
@@ -153,7 +156,7 @@ nav a:hover {
 }
 
 .contact-info {
-	padding-top: 5%;
+	padding: 5% 2%;
 	border-top: 1px solid grey;
 }
 
@@ -192,6 +195,7 @@ footer {
 
     .head {
         padding-left: 0;
+        margin: 0 5%;
     }
 
     .head .innovation {
@@ -206,7 +210,18 @@ footer {
         padding-bottom: 5%;
         font-size: 400%;
     }
+
+    .start-button {
+        font-size: 100%;
+    }
     
+    .main-text {
+        padding: 05%;
+    }
+
+    .contact-info {
+        margin: 0 5%;
+    }
 
 }
 
@@ -228,12 +243,19 @@ footer {
         justify-content: center;
         border: 1px solid grey;
     }
+
+    .start-button {
+        font-size: 100%;
+    }
     
+    .head {
+        margin: 0 10%;
+    }
 
     .main-text {
         flex-direction: column;
         width: 100%;
-        padding: 5%;
+        padding: 0 10%;
     }
 
     .main-text .text-area {
@@ -241,13 +263,14 @@ footer {
         flex-direction: column;
     }
 
+
     .main-text .text-area2{
         flex-direction: column;
         width: 100%;
     } 
 
     .contact-info {
-        padding: 10% 5%;
-        padding
+        padding: 5% 0;
+        margin: 0 10%;
     }
 }
