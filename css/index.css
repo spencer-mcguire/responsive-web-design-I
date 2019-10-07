@@ -174,7 +174,6 @@ footer {
 @media (max-width: 800px){
 
     .headercss {
-        border: 1px solid red;
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
@@ -214,7 +213,7 @@ footer {
 /* MOBILE VIEW */
 @media (max-width: 500px){
     .headercss {
-        margin: 0;
+        margin: 3vh 0;
     }
     .headercss nav {
         flex-direction: column;
@@ -228,5 +227,27 @@ footer {
         font-size: 120%;
         justify-content: center;
         border: 1px solid grey;
+    }
+    
+
+    .main-text {
+        flex-direction: column;
+        width: 100%;
+        padding: 5%;
+    }
+
+    .main-text .text-area {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main-text .text-area2{
+        flex-direction: column;
+        width: 100%;
+    } 
+
+    .contact-info {
+        padding: 10% 5%;
+        padding
     }
 }
