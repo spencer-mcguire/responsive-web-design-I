@@ -196,3 +196,31 @@ footer {
     }
 
 }
+
+/* MOBILE VIEW */
+@media (max-width: 500px){
+    header {
+        margin-top: 3vh;
+        border-bottom: 1px solid grey;
+    }
+    header nav {
+        flex-direction: column;
+        line-height: 2;
+    }
+
+    header nav .nav-item-h {
+        display: flex;
+        width: 100%;
+        padding: 2% 0;
+        font-size: 120%;
+        justify-content: center;
+        border-top: 1px solid grey;
+    }
+
+    .body .box1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;        
+    }
+
+}
