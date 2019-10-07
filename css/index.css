@@ -75,13 +75,13 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
 }
 
-.headercss {
+header {
 	display: flex;
 	justify-content: space-around;
     margin: 5vh;
 }
 
-.headercss nav {
+header nav {
 	display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,7 +113,6 @@ nav a:hover {
 	text-align: center;
 	font-size: 470%;
 	margin-top : 20%;
-	align-items: center;
 }
 .innovation-img {
     padding-left: 5%;
@@ -134,7 +133,7 @@ nav a:hover {
 
 .main-text{
     display: flex;
-    margin 5%;
+    
 }
 
 .main-text .text-area {
@@ -176,14 +175,14 @@ footer {
 /* TABLET VIEW */
 @media (max-width: 800px){
 
-    .headercss {
+    header {
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
         margin: 5vh 0;
     }
 
-    .headercss nav {
+    header nav {
         justify-content: space-around;
         width: 100%;
         padding: 0;
@@ -227,15 +226,15 @@ footer {
 
 /* MOBILE VIEW */
 @media (max-width: 500px){
-    .headercss {
+    header {
         margin: 3vh 0;
     }
-    .headercss nav {
+    header nav {
         flex-direction: column;
         line-height: 2;
     }
 
-    .headercss nav .nav-item-h {
+    header nav .nav-item-h {
         display: flex;
         width: 100%;
         padding: 2% 0;
