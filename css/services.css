@@ -1,5 +1,3 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -72,17 +70,18 @@ h1, h2, h3, h4, h5 {
 
 .container {
 	width: 900px;
-	margin: 0 auto;
+	margin: auto;
 }
 
 header {
 	display: flex;
 	justify-content: space-around;
     margin: 5vh;
+    
 }
 
 header nav {
-	display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 	width: 75%;
@@ -99,80 +98,82 @@ nav a:hover {
     
 }
 
-.head {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 8%;
-	align-items: center;
+
+.top-content {
     border-bottom: 1px solid grey;
-    padding-left: 15%;
-    padding-bottom: 8%;  
+    margin-bottom: 5vh;
 }
 
-.innovation h1{
-	text-align: center;
-	font-size: 470%;
-	margin-top : 20%;
-}
-.innovation-img {
-    padding-left: 5%;
-    
+.top-content h2 {
+    font-size: 150%;
 }
 
-.start-button {
-    padding: 2% 7%;
-	font-size: 125%;
-	align-items: center;
-	margin: 0 25%;
-	border-radius: 10px;
-}
-.start-button:hover {
-    background: dodgerblue;
-    color: white;
-}
-
-.main-text{
-    display: flex;
-    
-}
-
-.main-text .text-area {
+.top-content div {
     margin: 5% auto;
-    width: 48%;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;	
 }
 
-
-
-.main-text .text-area2 {
-	margin: 5% auto;
-	justify-content: space-around;
-    width: 30%;
+.body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin-bottom: 5%;
+    
+}
+.body .button {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 75%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    width:30%;
+    padding: 2%;
+    
 }
 
-.contact-info {
-	padding: 5% 2%;
-	border-top: 1px solid grey;
+.body .box1 {
+    border: 2px solid grey;
+    margin: 20px;
+    padding: 25px;
+    width: 45%;
 }
 
-.phone {
-	line-height: 2;
+.bottom-content {
+    margin: 5% 0;
+    padding: 5% 0;
+    border-top: 1px solid grey;
+    display: flex;
+
+}
+
+.bottom-content .box2 {
+    display: flex;
+    flex-flow: column wrap;
+    width: 49%;
+}
+
+.bottom-text {
+    margin-right: 20px;
+    padding-bottom: 20px;
+    
+}
+
+ul {
+    list-style-type: circle;
+    margin: 15px;
 }
 
 footer {
 	display: flex;
 	justify-content: center;
 	font-size: 85%;
-	margin: 5vh;
+	margin: 10vh;
 }
 
-/* Media queries */
+/* Media Queries */
 
 /* TABLET VIEW */
 @media (max-width: 800px){
-
     header {
         justify-content: center;
         align-items: center;
@@ -185,39 +186,13 @@ footer {
         width: 100%;
         padding: 0;
     }
-
-    .innovation-img {
-        display: none;
+    /* content */
+    .top-content {
+        margin: auto 5%;
     }
 
-    .head {
-        padding-left: 0;
-        margin: 0 5%;
-    }
-
-    .head .innovation {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .innovation h1 {
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-        padding-bottom: 5%;
-        font-size: 400%;
-    }
-
-    .start-button {
-        font-size: 100%;
-    }
-    
-    .main-text {
-        padding: 05%;
-    }
-
-    .contact-info {
-        margin: 0 5%;
+    .bottom-content {
+        margin: auto 5%;
     }
 
 }
@@ -242,33 +217,10 @@ footer {
         border-top: 1px solid grey;
     }
 
-    .start-button {
-        font-size: 100%;
-    }
-    
-    .head {
-        margin: 0 10%;
-    }
-
-    .main-text {
+    .body .box1 {
+        display: flex;
         flex-direction: column;
-        width: 100%;
-        padding: 0 10%;
+        width: 100%;        
     }
 
-    .main-text .text-area {
-        width: 100%;
-        flex-direction: column;
-    }
-
-
-    .main-text .text-area2{
-        flex-direction: column;
-        width: 100%;
-    } 
-
-    .contact-info {
-        padding: 5% 0;
-        margin: 0 10%;
-    }
 }
